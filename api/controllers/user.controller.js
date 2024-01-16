@@ -26,10 +26,10 @@ export const updateUser = async (req, res, next) => {
             }
         }, {new: true}) //return and save updated user for the with new information
 
-        const {password, ...rest} = updatedUser._doc
+        const {password, ...rest} = updatedUser._doc;
 
         res.status(200).json(rest);
     } catch (error) {
-        next(error)
+        next(error);
     }
 }
