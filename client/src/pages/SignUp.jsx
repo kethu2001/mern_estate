@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import OAuth from '../components/OAuth';
 
 export default function SignUp() {
@@ -26,7 +26,7 @@ export default function SignUp() {
         });
       //convert results to json
       const data = await res.json();
-      console.log(data)
+      console.log(data);
       if (data.success === false) {
         setLoading(false);
         setError(data.message);
