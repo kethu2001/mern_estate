@@ -209,7 +209,7 @@ export default function UpdateListing() {
                         <button type='button' onClick={() => handleRemoveImage(index)} className='p-3 text-red-700 rounded-lg uppercase hover:opacity-75'>Delete</button>
                     </div>
                 ))}
-                <button disabled={loading  || uploading} className='p-3 bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80'>{loading ? 'Creating' : 'Update listing'}</button>
+                <button disabled={loading  || uploading} className='p-3 bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80'>{loading ? 'Updating...' : 'Update listing'}</button>
                 {error && <p className='text-red-700 text-sm'>{error}</p>}
             </div>
             <p></p>
